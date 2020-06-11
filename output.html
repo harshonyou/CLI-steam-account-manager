@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style> 
+
+</style>
+</head>
+<body>
+    <body style="background-image: linear-gradient(-90deg, #155799, #159957);"></body>
+    <h1 id="P1" style="color: #5e9ca0; text-align: center; padding-top: 25px; font-size: 350%;">Cache<span style="color: #2b2301;"> Preview</span></h1>
+    <h1 id="P2" style="color: #5e9ca0; text-align: center; padding-top: 25px;">Coded By<span id="clrme" style="color: #2b2301;"> <a style="color: #2b2301;" href="http://dragoon.play.ai">Dragoon</a></span></h1>
+ <!-- uses solid style -->
+ <br><br>
+ <h5 id="myP1" style="color: #2e6c80; padding-left: 30px;">How to use the preview:</h5>
+ <p id="myP2" style="padding-left: 30px;">Drag and Drop or Choose File, to upload the 'cache.json' file.<br/>It is genrated every time you choose Status option.<br/>Click the Import to show the results.&nbsp;</p>
+
+
+
+<input type="file" id="selectFiles" value="Import" style="padding-left: 30px;" >
+
+
+
+
+<button id="import" class="btn btn-dark" >Import</button> <br><br>
+
+<table id="myTable" class="table table-striped table-dark table-hover">
+  <tr>
+  <th>Account</th>
+  <th>Ready To Use?</th>
+  <th>VAC</th>
+  <th>PR2</th>
+  <th>Cooldown</th>
+  </tr>
+</table>
+
+<script>
+    document.getElementById("P2").style.display = "none";
+    document.getElementById("myTable").style.visibility = "hidden";
+    
+    document.getElementById('import').onclick = function() {
+    
+    var files = document.getElementById('selectFiles').files;
+    //console.log(files);
+    if (files.length <= 0) {
+        return false;
+    }
+    document.getElementById("myTable").style.visibility = "visible";
+    document.getElementById("selectFiles").style.display = "none";
+    document.getElementById("import").style.display = "none";
+    document.getElementById("myP1").style.display = "none";
+    document.getElementById("myP2").style.display = "none";
+    document.getElementById("P1").style.display = "none";
+    document.getElementById("P2").style.display = "inline";
+    document.getElementById("P2").setAttribute("style",'color: #5e9ca0; text-align: center; padding-top: 25px; font-size: 350%;')
+    var fr = new FileReader();
+
+    fr.onload = function(e) { 
+        //console.log(e);
+        var result = JSON.parse(e.target.result);
+        var formatted = JSON.stringify(result, null, 2);
+        //console.log(formatted);
+        var countKey = Object.keys(result).length;
+        var table = document.getElementById("myTable");
+        
+        for(let i=0;i<countKey;i++){
+            var row = table.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            cell1.innerHTML = `${result[i]['username']}`;
+            let judge =true;
+            if(result[i]['vac']==1){
+                judge=false;
+                cell3.innerHTML = "&#10004;";
+            }else{
+                cell3.innerHTML = "&#10006;";
+            }
+            if(result[i]['pr2']==1){
+                cell4.innerHTML = "&#10004;";
+            }else{
+                judge=false;
+                cell4.innerHTML = "&#10006;";
+            }
+            if(result[i]['cd']==1){
+                judge=false;
+                cell5.innerHTML = "&#10004;";
+            }else{
+                cell5.innerHTML = "&#10006;";
+            }
+            if(judge){
+                cell2.innerHTML = "&#x2664;";
+            }else{
+                cell2.innerHTML = "&#9763;";
+            }
+        }
+    }
+    fr.readAsText(files.item(0));
+    };
+</script>
+</body>
+</html>

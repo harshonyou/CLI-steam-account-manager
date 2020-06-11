@@ -1,0 +1,163 @@
+{
+  "account_id": 1092845419,
+  "ongoingmatch": null,
+  "global_stats": {
+    "players_online": 721777,
+    "servers_online": 222277,
+    "players_searching": 19465,
+    "servers_available": 109285,
+    "ongoing_matches": 32730,
+    "search_time_avg": 110986,
+    "search_statistics": [
+      {
+        "game_type": 520,
+        "search_time_avg": 134359,
+        "players_searching": 6634
+      },
+      {
+        "game_type": 32776,
+        "search_time_avg": 128106,
+        "players_searching": 8060
+      },
+      {
+        "game_type": 4104,
+        "search_time_avg": 134393,
+        "players_searching": 4341
+      },
+      {
+        "game_type": 1048584,
+        "search_time_avg": 153820,
+        "players_searching": 2506
+      },
+      {
+        "game_type": 16392,
+        "search_time_avg": 169030,
+        "players_searching": 1182
+      },
+      {
+        "game_type": 1032,
+        "search_time_avg": 165739,
+        "players_searching": 1662
+      },
+      {
+        "game_type": 268435464,
+        "search_time_avg": 163332,
+        "players_searching": 2285
+      },
+      {
+        "game_type": 8200,
+        "search_time_avg": 179636,
+        "players_searching": 1528
+      },
+      {
+        "game_type": 134217736,
+        "search_time_avg": 179304,
+        "players_searching": 578
+      },
+      {
+        "game_type": 65544,
+        "search_time_avg": 146812,
+        "players_searching": 1061
+      },
+      {
+        "game_type": 2097160,
+        "search_time_avg": 136633,
+        "players_searching": 264
+      },
+      {
+        "game_type": 8388616,
+        "search_time_avg": 184707,
+        "players_searching": 593
+      },
+      {
+        "game_type": 16777224,
+        "search_time_avg": 221071,
+        "players_searching": 330
+      },
+      {
+        "game_type": 16394,
+        "search_time_avg": 103012,
+        "players_searching": 1062
+      },
+      {
+        "game_type": 4106,
+        "search_time_avg": 127337,
+        "players_searching": 2521
+      },
+      {
+        "game_type": 536870922,
+        "search_time_avg": 100482,
+        "players_searching": 1391
+      },
+      {
+        "game_type": 268435466,
+        "search_time_avg": 126873,
+        "players_searching": 1743
+      },
+      {
+        "game_type": 1034,
+        "search_time_avg": 102240,
+        "players_searching": 985
+      },
+      {
+        "game_type": 8202,
+        "search_time_avg": 115945,
+        "players_searching": 1744
+      },
+      {
+        "game_type": 8388618,
+        "search_time_avg": 125505,
+        "players_searching": 1745
+      },
+      {
+        "game_type": 32778,
+        "search_time_avg": 105695,
+        "players_searching": 875
+      },
+      {
+        "game_type": 2058,
+        "search_time_avg": 97578,
+        "players_searching": 798
+      },
+      {
+        "game_type": 269,
+        "search_time_avg": 411018,
+        "players_searching": 415
+      },
+      {
+        "game_type": 1037,
+        "search_time_avg": 420042,
+        "players_searching": 415
+      },
+      {
+        "game_type": 525,
+        "search_time_avg": 173817,
+        "players_searching": 415
+      }
+    ],
+    "main_post_url": "",
+    "required_appid_version": 13756,
+    "pricesheet_version": 1591838284,
+    "twitch_streams_version": 2,
+    "active_tournament_eventid": 16,
+    "active_survey_id": 0,
+    "rtime32_cur": null,
+    "rtime32_event_start": null
+  },
+  "penalty_seconds": 27833798,
+  "penalty_reason": 10,
+  "vac_banned": 1,
+  "ranking": null,
+  "commendation": null,
+  "medals": null,
+  "my_current_event": null,
+  "my_current_event_teams": [],
+  "my_current_team": null,
+  "my_current_event_stages": [],
+  "survey_vote": null,
+  "activity": null,
+  "player_level": null,
+  "player_cur_xp": null,
+  "player_xp_bonus_flags": null,
+  "rankings": []
+}

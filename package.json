@@ -1,0 +1,34 @@
+{
+  "name": "account-tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "colors": "^1.4.0",
+    "commander": "^5.1.0",
+    "csgo": "^1.5.14",
+    "figlet": "^1.4.0",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.4",
+    "prompt-sync": "^4.2.0",
+    "pad": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "nexe -t x86-10.0.0 -r output.html -r Stats/**/* -r Js/**/* -r Dev/**/* -r lib/**/*",
+    "start": "node index.js o"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "12.16.2"
+  }
+}
